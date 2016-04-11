@@ -77,19 +77,30 @@ const Utils = {
    * there you can understand more how this app works.
    */
   calculateCountNotes( withdraw, props ) {
-    props.atmData.withdrawnNotes = {
-          50: {
-            count: 0
-          },
-          20: {
-            count: 0
-          },
-          10: {
-            count: 0
-          }
-        },
-    withdraw 
-    return props.atmData.withdrawnNotes
+    let withdrawn50notes = 0;
+    let withdrawn20notes = 0;
+    let withdrawn10notes = 0;
+
+    while (withdraw > 0){
+      if (withdraw >= 50 && props.atmData.notesContainer['50'].count !== 0){
+        withdraw -= 50;
+        withdrawn50notes += 1;
+      }
+      if (withdraw >= 20 && props.atmData.notesContainer['20'].count !== 0){
+        withdraw -= 20;
+        withdrawn20notes += 1;
+      }
+      if (withdraw >= 10 && props.atmData.notesContainer['10'].count !== 0){
+        withdraw -= 10;
+        withdrawn10notes += 1;
+      }
+    }
+
+    return {
+      50: { count: withdrawn50notes},
+      20: { count: withdrawn20notes},
+      10: { count: withdrawn10notes}
+    };
   },
 
   /**

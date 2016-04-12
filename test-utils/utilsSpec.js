@@ -101,6 +101,26 @@ describe( 'Utils', () => {
       });
     });
 
+    describe( 'areAnyNotesLeft', () => {
+      it( 'is defined', () => {
+        expect( Utils.areAnyNotesLeft ).not.eq( undefined );
+      });
+      it( 'returns a Boolean', () => {
+        expect( Utils.areAnyNotesLeft()).to.be.a( 'Boolean' );
+      });
+      it( 'returns true if there are enough notes to cover the withdraw amount', () => {
+        const withdraw = 100;
+        expect( Utils.areAnyNotesLeft(withdraw, notesContainer)).to.eq( true );
+      });
+      it( 'returns false if there are not enough notes to cover the withdraw amount', () => {
+        const withdraw = 300;
+        notesContainer[ '50' ].count = 0;
+        notesContainer[ '20' ].count = 0;
+        notesContainer[ '10' ].count = 10;
+        expect( Utils.areAnyNotesLeft(withdraw, notesContainer)).to.eq( false );
+      });
+    });
+
     describe( 'calculateCountNotes', () => {
       it( 'is defined', () => {
         expect( Utils.calculateCountNotes ).not.eq( undefined );

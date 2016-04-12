@@ -59,6 +59,7 @@ const Utils = {
    *
    */
   areAnyNotesLeft( withdraw, notesContainer ) {
+    let amount50 = 
   },
 
   /** TODO Implement this method

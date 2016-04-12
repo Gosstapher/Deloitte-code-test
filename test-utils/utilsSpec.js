@@ -106,7 +106,8 @@ describe( 'Utils', () => {
         expect( Utils.areAnyNotesLeft ).not.eq( undefined );
       });
       it( 'returns a Boolean', () => {
-        expect( Utils.areAnyNotesLeft()).to.be.a( 'Boolean' );
+        const withdraw = 50;
+        expect( Utils.areAnyNotesLeft(withdraw, notesContainer)).to.be.a( 'Boolean' );
       });
       it( 'returns true if there are enough notes to cover the withdraw amount', () => {
         const withdraw = 100;

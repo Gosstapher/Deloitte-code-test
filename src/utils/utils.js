@@ -59,7 +59,17 @@ const Utils = {
    *
    */
   areAnyNotesLeft( withdraw, notesContainer ) {
-    let amount50 = 
+    let totalCash = 0;
+    totalCash += (notesContainer['50'].count * 50);
+    totalCash += (notesContainer['20'].count * 20);
+    totalCash += (notesContainer['10'].count * 10);
+
+    if(withdraw <= totalCash){
+      return true
+    }else{
+      return false
+    }
+
   },
 
   /** TODO Implement this method

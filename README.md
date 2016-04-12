@@ -1,12 +1,13 @@
 ## Prerequisites
 
 [Node.js](http://nodejs.org/) must be installed.
+[NPM](https://www.npmjs.com/) must be updated to 3.8.6.
 
 ## Installation
 
 ```shell
 # Clone the repository
-> git clone https://github.com/DeloitteDigitalUK/atm-case-study.git
+> git clone https://github.com/Gosstapher/Deloitte-code-test.git
 
 # Install dependencies
 > cd atm-case-study
@@ -49,7 +50,9 @@ Here you can see the structure for this repo:
     |-- nwb.config.js
     |-- package.json
     |-- public
+    |   |-- app.css
     |   |-- index.html
+    |   |-- vendor.css
     |-- src
     |   |-- index.js
     |   |-- components

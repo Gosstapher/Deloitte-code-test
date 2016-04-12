@@ -211,9 +211,9 @@ const Utils = {
     }
     let textResult = '';
     _.forOwn( withdrawnNotes, ( value, key ) => {
-      textResult += `key=${key} value=${value.count}`;
+      textResult += `£${key} x${value.count}, `;
     });
-    return textResult;
+    return textResult.slice(0,-2);
   }
 };
 

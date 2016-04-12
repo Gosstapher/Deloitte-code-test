@@ -156,7 +156,7 @@ const Utils = {
   getValidationMessage( validationObject ) {
     const validationMsg = {
       notesError: 'There is only notes of £10, £20 and £50',
-      notesAvailability: 'The only available notes at this time are  ',
+      notesAvailability: `The only available notes at this time are `,
       rangeError: 'Only withdraws between £300 and £10',
       amountError: `Sorry, but the availability is £${validationObject.totalMoney}`,
       balanceError: `Sorry, but your balance is £${validationObject.userMethod}`,

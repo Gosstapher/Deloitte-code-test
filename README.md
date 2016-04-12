@@ -38,6 +38,10 @@ Here you can see the structure for this repo:
 
 ```
 |-- atm-case-study
+    |-- assets
+        |-- balance.png
+        |-- logo.png
+        |-- withdraw.png
     |-- .eslintignore
     |-- .eslintrc
     |-- .gitignore

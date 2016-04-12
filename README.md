@@ -78,7 +78,7 @@ Here you can see the structure for this repo:
 ------------------------------------------------------------------------------------------------------
 
     
-    This was the first time I have seen ECMAScript 6, I have learned JavaScript in the ECMAScript 5 environment. My unfamiliarity with the syntax and new features made my approach to this code test different than if it was a technology I had a stronger background with.
+   ** This was the first time I have seen ECMAScript 6, I have learned JavaScript in the ECMAScript 5 environment. My unfamiliarity with the syntax and new features made my approach to this code test different than if it was a technology I had a stronger background with.
     The NWB framework was also brand new to me, as were some of the plugins such as Skin-Deep.
 
     I initially spent time following the React flow, attempting to understand how the app was working, while at the same time looking into the new syntax when it was unfamiliar. Learning the new methods of declaring constants, variables and assigning functions using arrows I feel was time well spent.
@@ -98,7 +98,7 @@ Here you can see the structure for this repo:
 
     Thank You for you time.
 
-    Daniel Gillespie.
+    Daniel Gillespie. **
 
 
 
